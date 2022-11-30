@@ -37,12 +37,14 @@ def mean_color(colors=COLORS, color_values=COLOR_VALUES):
         if mean == value:
             return f"The mean colour is {key}"
 
+
 def mode_color(colors=COLORS):
     return f"Most common color is {statistics.multimode(colors)}"
 
 
-def median_color(week):
-    pass
+def median_color(colors=COLORS):
+    return f"Median color is {statistics.median(colors)}"
+
 
 def variance_color(week):
     pass
