@@ -7,6 +7,7 @@ WEEK = {
     "THURSDAY": "BLUE, BLUE, GREEN, WHITE, BLUE, BROWN, PINK, YELLOW, ORANGE, CREAM, ORANGE, RED, WHITE, BLUE, WHITE, BLUE, BLUE, BLUE, GREEN".split(", "),
     "FRIDAY": "GREEN, WHITE, GREEN, BROWN, BLUE, BLUE, BLACK, WHITE, ORANGE, RED, RED, RED, WHITE, BLUE, WHITE, BLUE, BLUE, BLUE, WHITE".split(", ")
 }
+
 COLOR_VALUES = {
     'ARSH' : 1,
     'BLACK': 2,
@@ -34,9 +35,8 @@ def mean_color(colors=COLORS, color_values=COLOR_VALUES):
     mean = sum//len(colors)
     for key, value in color_values.items():
         if mean == value:
-            return f" The mean colour is {key}"
+            return f"The mean colour is {key}"
 
-print(mean_color())
 
 def mode_color(week):
     pass
