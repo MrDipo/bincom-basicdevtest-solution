@@ -88,7 +88,7 @@ def save_to_db(colors=COLORS, color_value=COLOR_VALUES):
     create_table()
     for color in color_value.keys():
         insert(color, colors.count(color))
-    view()
+    return view()
 
 
 def binary_search(n=69, nums=[1,2,3,4,7,3,2,4,6,9,43,23,554,65,123,78,9,6345,235,465,3123,69]):
