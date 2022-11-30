@@ -1,4 +1,4 @@
-import random
+import random, statistics
 
 WEEK = {
     "MONDAY": "GREEN, YELLOW, GREEN, BROWN, BLUE, PINK, BLUE, YELLOW, ORANGE, CREAM, ORANGE, RED, WHITE, BLUE, WHITE, BLUE, BLUE, BLUE, GREEN".split(", "),
@@ -37,9 +37,9 @@ def mean_color(colors=COLORS, color_values=COLOR_VALUES):
         if mean == value:
             return f"The mean colour is {key}"
 
+def mode_color(colors=COLORS):
+    return f"Most common color is {statistics.multimode(colors)}"
 
-def mode_color(week):
-    pass
 
 def median_color(week):
     pass
